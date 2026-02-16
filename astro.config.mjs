@@ -7,7 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://pauliii1.github.io",
+  site: "https://paulili1.github.io",
   base: "/Bases-de-Datos-2",
 
   integrations: [
