@@ -5,42 +5,55 @@ import siteConfig from "../site.config";
 import coverImage from "../assets/images/pixeltrue-space-discovery.svg";
 ---
 
-<MainLayout activePage="contact" pageTitle={siteConfig.title + " | Contact"}>
-  <div class="page-content">
-    <h1 class="sigmar-ff text-balance">{siteConfig.contactInfo?.title}</h1>
+<MainLayout activePage="contact" pageTitle="Presentación | Paula Buitrago">
+  <div class="page-content text-center">
+
+   
+    <h1 class="sigmar-ff text-balance">
+      {siteConfig.contactInfo?.title}
+    </h1>
+
+   
+    <p class="font-light text-balance mt-4 mb-8 max-w-2xl mx-auto">
+      {siteConfig.contactInfo?.text}
+    </p>
+
+    
     <Image
       width={400}
       height={300}
       loading="eager"
-      layout="fixed"
-      class="rounded-4xl mb-8 mx-auto grayscale-75 saturate-200"
+      class="rounded-4xl mb-10 mx-auto"
       src={coverImage}
-      alt="Space envelop"
+      alt="Imagen de presentación"
     />
-    <div class="flex flex-col">
-      <!-- <Image width={1024} height={600} loading="eager" layout="constrained" class="rounded-4xl mb-8 mx-auto" src={coverImage} alt="An Astronaut walking on a terrain"/> -->
-      <p class="font-light text-left text-balance">
-        {siteConfig.contactInfo?.text}
-      </p>
-      <p class="font-light text-left">
-        {siteConfig.contactInfo?.email?.text}<br />
-        <a
-          href={siteConfig.contactInfo?.email?.href}
-          class="font-light text-left"
-        >
-          {siteConfig.contactInfo?.email?.email}
-        </a>
-      </p>
-      <p class="font-bold text-left flex flex-col sm:flex-row">
-        Social Profiles:
-        {
-          siteConfig.contactInfo?.socialProfiles?.map((profile) => (
-            <a href={profile.href} class="font-light text-left ml-4">
-              {profile.text}
-            </a>
-          ))
-        }
-      </p>
+
+    <!-- Videooo -->
+    <div class="flex justify-center my-10">
+      <iframe
+        width="800"
+        height="450"
+        src="https://www.youtube.com/embed/XvI8aJPXiYA"
+        title="Video de presentación"
+        frameborder="0"
+        allowfullscreen
+        class="rounded-2xl shadow-lg"
+      ></iframe>
     </div>
+
+    <!-- Correooo -->
+    <div class="mt-10">
+      <p class="font-medium text-lg">
+        {siteConfig.contactInfo?.email?.text}
+      </p>
+
+      <a
+        href={siteConfig.contactInfo?.email?.href}
+        class="text-blue-500 hover:underline text-lg"
+      >
+        {siteConfig.contactInfo?.email?.email}
+      </a>
+    </div>
+
   </div>
 </MainLayout>

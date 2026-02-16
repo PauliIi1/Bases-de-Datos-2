@@ -68,121 +68,105 @@ export type SiteConfig = {
 };
 
 const siteConfig: SiteConfig = {
-    website: 'https://example.com',
-    title: 'Space Ahead',
-    description: 'A minimal space-inspired personal blog template built with Astro.js and Tailwind CSS, by Siddhesh Thadeshwar',
+
+    website: 'https://paulabuitrago.github.io/Bases-de-Datos-2',
+
+    title: 'Portafolio',
+
+    description: 'E-portafolio académico para la asignatura bases de datos 2.',
+
     image: {
         src: '/space-ahead-preview.jpeg',
-        alt: 'Space Ahead ✨ - A minimal space-inspired personal blog template, created by Siddhesh Thadeshwar.'
+        alt: 'E-Portafolio Paula Buitrago'
     },
+
     headerNavLinks: [
         {
-            text: 'Home',
+            text: 'Inicio',
             href: withBase('/')
         },
         {
-            text: 'Blog',
+            text: 'Evidencias',
             href: withBase('/blog')
         },
         {
-            text: 'Tags',
+            text: 'Etiquetas',
             href: withBase('/tags')
         },
         {
-            text: 'About',
+            text: 'Acerca de',
             href: withBase('/about')
         },
         {
-            text: 'Contact',
+            text: 'Presentación',
             href: withBase('/contact')
         }
     ],
+
     footerNavLinks: [
         {
-            text: 'About',
-            href: withBase('/about')
+            text: 'Inicio',
+            href: withBase('/')
         },
         {
-            text: 'Contact',
+            text: 'Evidencias',
+            href: withBase('/blog')
+        },
+        {
+            text: 'Presentación',
             href: withBase('/contact')
-        },
-        {
-            text: 'RSS Feed',
-            href: withBase('/rss.xml')
-        },
-                {
-            text: 'Sitemap',
-            href: withBase('/sitemap-index.xml')
         }
     ],
+
     socialLinks: [
         {
-            text: 'Dribbble',
-            href: 'https://dribbble.com/'
-        },
-        {
-            text: 'Instagram',
-            href: 'https://instagram.com/'
-        },
-        {
-            text: 'X/Twitter',
-            href: 'https://twitter.com/'
+            text: 'GitHub',
+            href: 'https://github.com/PauliIi1'
         }
     ],
+
     hero: {
-        eyebrowText: 'Galaxy of Adventures',
-        title: 'Space Ahead ✨',
-        text: "Written by Astro-naut Sid, a space explorer at Beyond Earth.",
-        image: {
-            src: '/assets/images/pixeltrue-space-discovery.svg',
-            alt: 'A person sitting at a desk in front of a computer'
-        },
+        eyebrowText: 'Bases de Datos II',
+        title: 'Paula Buitrago',
+        text: 'Bienvenido a mi e-portafolio académico. Aquí encontrarás mis proyectos, evidencias y avances desarrollados durante el curso.',
         actions: [
             {
-                text: 'Read Now',
+                text: 'Ver Evidencias',
                 href: withBase('/blog')
             },
             {
-                text: 'Subscribe',
-                href: '#subscribe'
+                text: 'Ir a Presentación',
+                href: withBase('/contact')
             }
         ]
     },
+
     about: {
-        title: 'About',
-        text: 'Space Ahead is a blog about space exploration and travel. It is written by Astro-naut Sid, a space explorer at Beyond Earth. Sid is known for his love of adventure and his insatiable curiosity about the universe. He has explored countless planets, discovered new life forms, and made friends with aliens along the way. 🚀',
+        title: 'Acerca de este sitio',
+        text: 'Este e-portafolio documenta mi proceso de aprendizaje, proyectos prácticos y evolución académica en la asignatura de Bases de Datos II.',
     },
+
     contactInfo: {
-        title: 'Contact',
-        text: "Hi! Whether you have a question, a suggestion, or just want to share your thoughts, I'm all ears. Feel free to get in touch through any of the methods below:",
+        title: 'Presentación',
+        text: 'Bienvenido, soy Paula. En esta sección encontrarás mi video de presentación y mi contacto por si deseas comunicarte conmigo.',
         email: {
-            text: "Drop me an email and I’ll do my best to respond as soon as possible.",
-            href: "mailto:example@example.com",
-            email: "example@example.com"
+            text: "Correo institucional:",
+            href: "mailto:pbuitragov@unbosque.edu.co",
+            email: "pbuitragov@unbosque.edu.co"
         },
-        socialProfiles: [
-            {
-                text: "LinkedIn",
-                href: "https://www.linkedin.com/"
-            },
-            {
-                text: "Peerlist",
-                href: "https://www.peerlist.io/"
-            },
-            {
-                text: "GitHub",
-                href: "https://github.com/"
-            }
-        ]
+        socialProfiles: []
     },
+
     subscribe: {
-        title: 'Subscribe to Space Ahead',
-        text: 'One update per week. All the latest stories in your inbox.',
+        title: '',
+        text: '',
         formUrl: '#'
     },
+
     blog: {
-        description: "Read about my space adventures, explorations and the aliens I've met on my journeys."
+        description: "En esta sección encontrarás todas las evidencias, actividades y avances desarrollados durante el curso."
     },
+
     postsPerPage: 2,
     recentPostLimit: 3
 };

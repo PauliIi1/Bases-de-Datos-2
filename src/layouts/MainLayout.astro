@@ -45,7 +45,14 @@ const {
     <main class="max-w-3xl mx-auto min-h-screen">
       <Nav activePage={activePage} />
       <slot />
-      {showSubscribeForm && <Subscribe class="my-12 w-full" />}
+      <section class="text-center my-12 px-4">
+  <h2 class="sigmar-ff mb-4">Gracias por visitar mi e-portafolio</h2>
+  <p class="kanit-light max-w-xl mx-auto">
+    Este espacio refleja mi proceso de aprendizaje en Bases de Datos 2.
+    Te invito a explorar mis evidencias y conocer mi desarrollo académico.
+  </p>
+</section>
+
       <Footer />
     </main>
   </body>
