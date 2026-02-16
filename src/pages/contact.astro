@@ -1,34 +1,26 @@
 ---
-import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import siteConfig from "../site.config";
-import coverImage from "../assets/images/pixeltrue-space-discovery.svg";
+import { withBase } from "../utils/helpers";
 ---
 
 <MainLayout activePage="contact" pageTitle="Presentación | Paula Buitrago">
-  <div class="page-content text-center">
+  <div class="page-content text-center px-4">
 
-   
     <h1 class="sigmar-ff text-balance">
       {siteConfig.contactInfo?.title}
     </h1>
 
-   
-    <p class="font-light text-balance mt-4 mb-8 max-w-2xl mx-auto">
+    <img
+      src={withBase("/foto.jpeg")}
+      alt="Foto de Paula Buitrago"
+      class="w-40 h-40 rounded-full mx-auto mt-6 mb-6 object-cover shadow-lg"
+    />
+
+    <p class="font-light text-balance max-w-2xl mx-auto mb-8">
       {siteConfig.contactInfo?.text}
     </p>
 
-    
-    <Image
-      width={400}
-      height={300}
-      loading="eager"
-      class="rounded-4xl mb-10 mx-auto"
-      src={coverImage}
-      alt="Imagen de presentación"
-    />
-
-    <!-- Videooo -->
     <div class="flex justify-center my-10">
       <iframe
         width="800"
@@ -37,11 +29,10 @@ import coverImage from "../assets/images/pixeltrue-space-discovery.svg";
         title="Video de presentación"
         frameborder="0"
         allowfullscreen
-        class="rounded-2xl shadow-lg"
+        class="rounded-2xl shadow-lg max-w-full"
       ></iframe>
     </div>
 
-    <!-- Correooo -->
     <div class="mt-10">
       <p class="font-medium text-lg">
         {siteConfig.contactInfo?.email?.text}

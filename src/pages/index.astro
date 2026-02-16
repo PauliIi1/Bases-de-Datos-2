@@ -19,12 +19,19 @@ const allPosts = (await getCollection("blogs")).sort(sortItemsByDateDesc);
   <div
     class="jumbo-banner flex flex-col sm:flex-row sm:items-center sm:justify-between w-full px-4 my-12 gap-6"
   >
-    <!-- TEXTO PRINCIPAL -->
+    
     <div class="w-full sm:w-fit sm:max-w-1/2">
 
       <h1 class="sigmar-ff leading-tight text-balance sm:pt-0!">
         Paula Buitrago
       </h1>
+
+      <img
+  src={withBase("/foto.jpeg")}
+  alt="Foto de Paula Buitrago"
+  class="w-40 h-40 rounded-full mt-4 mb-4 object-cover shadow-lg"
+/>
+
 
       <p class="kanit-regular text-balance text-xs sm:text-base">
         Bienvenido a mi e-portafolio. Soy Paula y aquí estaré mostrando
@@ -33,7 +40,7 @@ const allPosts = (await getCollection("blogs")).sort(sortItemsByDateDesc);
 
     </div>
 
-    <!-- IMAGEN ASTRONAUTA -->
+   
     <div class="w-full sm:w-fit sm:max-w-1/2">
       <Image
         class="cover-img"
@@ -46,7 +53,7 @@ const allPosts = (await getCollection("blogs")).sort(sortItemsByDateDesc);
 
   </div>
 
-  <!-- VIDEO DE PRESENTACIÓN DEBAJO DEL HERO -->
+  <!-- VIDEO  -->
   <div class="flex justify-center my-12 px-4">
     <iframe
       width="800"
