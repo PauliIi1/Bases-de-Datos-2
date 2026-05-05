@@ -1,6 +1,6 @@
 ---
-title: "Proyecto"
-description: "Proyecto final."
+title: "Proyecto Final"
+description: "Gestión de espacios colaborativos"
 author: "Paula Buitrago Velandia"
 image:
   url: "../../assets/images/1.png"
@@ -14,7 +14,7 @@ Bienvenido a mi proyecto final
 
 ## De qué se trata?
 
-1. **Descripción general**: .
+1. **Descripción general**: La gestión de los espacios colaborativos en la Universidad El Bosque no es óptima. El proceso de reserva, mantenimiento y asignación de recursos se realiza de manera manual o mediante sistemas que no son eficientes y no se comunican entre sí. Esta falta de integración genera problemas operativos como la doble programación, la perdida de información, la gestión ineficiente de recursos, conflictos entre los usuarios, dificultad en la planificación y la falta de trazabilidad. Estas deficiencias impactan negativamente en la experiencia de estudiantes, docentes y personal administrativo, generando pérdida de tiempo, conflictos interpersonales y subutilización de la infraestructura universitaria. 
 
 2. **Objetivos**: .
 
