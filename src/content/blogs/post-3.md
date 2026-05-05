@@ -33,9 +33,10 @@ SELECT COUNT(*) INTO vn_primo
     END IF;  
 END;
 /
-´´´
+\`\`\`
 ### B. Primo o No Primo
 Generación de la serie hasta el número 100.
+```sql
 DECLARE  
     vn_num1 number := 0; 
     vn_num2 number :=1; 
@@ -49,10 +50,11 @@ BEGIN
     vn_num2:= vn_suma; 
     END LOOP; 
 END;
-
-2. Funciones Personalizadas
+/
+\`\`\`
+## 2. Funciones Personalizadas
 Saludo con Parámetros
-SQL
+```sql
 CREATE OR REPLACE FUNCTION fn_saludo_varchar (param_nombres VARCHAR2) 
 RETURN VARCHAR2 IS 
     vv_nombre VARCHAR2(50); 
@@ -75,3 +77,5 @@ vv_suma := vv_suma + (POWER(vv_x,2) * vv_dx);
 END LOOP; 
 RETURN(vv_suma); 
 END;
+/
+\`\`\`
