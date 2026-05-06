@@ -5,7 +5,7 @@ description: "Scripts SQL avanzado: Taller 1 con transacciones ACID, CTEs, funci
 image:
   url: "../../assets/images/4.jpg"
   alt: "The word astro against an illustration of planets and stars."
-pubDate: 2024-02-07
+pubDate: 2025-05-01
 tags: ["BD2", "SQL", "ACID"]
 ---
 
